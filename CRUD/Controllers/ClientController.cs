@@ -20,6 +20,7 @@ namespace CRUD.Controllers
         //
         // GET: /Client/
 
+        /* test */
         public ActionResult Index()
         {
             List<ClientViewModel> ModelList = new List<ClientViewModel>();
