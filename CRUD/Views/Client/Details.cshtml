@@ -1,0 +1,55 @@
+﻿@using CRUD.ViewModels
+@model ClientViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@{
+   List<SelectListItem> listItems= new List<SelectListItem>();
+   listItems.Add(new SelectListItem
+        {
+          Text = "Male",
+          Value = "Male"
+        });
+   listItems.Add(new SelectListItem
+        {
+            Text = "Female",
+            Value = "Female"
+        });
+}
+
+<h4>Details</h4>
+<br />
+<br />
+<fieldset>
+    <legend>Client</legend>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.FullName)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.FullName, new { disabled = "disabled" })
+    </div>
+    <br />
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Gender)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Gender, new { disabled = "disabled" })
+    </div>
+    <br />
+    <div class="editor-label">
+        @Html.LabelFor(model => model.DateOfBirth)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model._dateOfBirth, new { disabled = "disabled" })
+    </div>
+    <br />
+
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

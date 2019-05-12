@@ -1,0 +1,61 @@
+.bubble {
+    height: 14px;
+    width: auto;
+    padding: 18px;
+    font-family:Arial;
+    /*background-color: #339baf;*/
+    /*margin:0 0 0 280px;*/
+    color: #339baf;
+    font-weight: bold;
+    font-size: 12px;
+    /*border-radius: 2px;*/
+    /*box-shadow: 0px 0px 3px 0px rgba(255, 0, 0, 0.25);*/
+    /*left:1200px;*/
+    /*top:12px;*/
+    right:230px;
+    float:right;
+    position:absolute
+}
+
+.bubble2 {
+    height: 14px;
+    width: auto;
+    padding: 18px;
+    font-family:Arial;
+    /*background-color: #559e3c;*/
+    /*margin:0 0 0 440px;*/
+    color: #559e3c;
+    font-weight: bold;
+    font-size: 12px;
+    /*border-radius: 2px;*/
+    /*box-shadow: 0px 0px 3px 0px rgba(255, 0, 0, 0.25);*/
+    /*left:1141px;*/
+    /*top:12px;*/
+    right:390px;
+    float:right;
+    position:absolute
+}
+
+.iconNotif {
+    font-size: 16px;
+}
+
+.changeRole {
+background-color:inherit;
+float:left;
+width:270px;
+border:none;
+cursor:pointer;
+-webkit-appearance: none;
+}
+.changeRole {
+        /*for firefox*/
+        -moz-appearance: none;
+        /*for chrome*/
+        -webkit-appearance:none;
+      }
+
+/*for IE10*/
+.changeRole::-ms-expand {
+    display: none;
+}
